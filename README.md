@@ -1,6 +1,6 @@
-# pyGrains - record a pulse and loop it
+# PulseLooper - record a pulse and loop it
 
-pyGrains (formerly pyGrains) is a tool for teaching that "pitch"
+PulseLooper (formerly pyGrains) is a tool for teaching that "pitch"
 is a perceptual phenomenon about the way we experience frequency
 by taking a single pulse and looping it.  Uses granular synthesis
 in python. Designed to support a lesson that teaches:
@@ -25,20 +25,12 @@ Things that are implicitly demonstrated but needn't be called-out if it's too mu
 
 This works on my mac. Your python3 binary might be called something else.
 
-### Install
-
 ```sh
-python3 -m venv .pyGrains-venv
-source .pyGrains-venv/bin/activate
+python3 -m venv .PulseLooper-venv
+source .PulseLooper-venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-deactivate
-```
-
-### Run
-```sh
-source .pyGrains-venv/bin/activate
-python pyGrains.py &
+python PulseLooper.py &
 ```
 
 `deactivate` will exit the venv

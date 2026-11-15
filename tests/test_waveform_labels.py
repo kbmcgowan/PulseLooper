@@ -1,6 +1,6 @@
 import unittest
 
-from pyGrains import format_time_ms
+from PulseLooper import format_time_ms
 
 class FormatTimeMillisecondsTests(unittest.TestCase):
     def test_formats_integer_milliseconds_without_trailing_zeroes(self) -> None:

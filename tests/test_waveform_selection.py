@@ -6,7 +6,7 @@ os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
 import numpy as np
 from PySide6.QtWidgets import QApplication
 
-from pyGrains import WaveformWidget
+from PulseLooper import WaveformWidget
 
 
 class WaveformSelectionTests(unittest.TestCase):

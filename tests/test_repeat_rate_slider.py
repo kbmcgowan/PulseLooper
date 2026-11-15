@@ -1,6 +1,6 @@
 import unittest
 
-from pyGrains import (
+from PulseLooper import (
     RATE_SLIDER_STEPS,
     repeat_rate_for_slider,
     slider_position_for_repeat_rate,

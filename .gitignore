@@ -1,0 +1,4 @@
+.venv/
+.pyGrains-venv/
+__pycache__/
+*.py[cod]

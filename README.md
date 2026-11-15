@@ -5,9 +5,9 @@ is a perceptual phenomenon about the way we experience frequency
 by taking a single pulse and looping it.  Uses granular synthesis
 in python. Designed to support a lesson that teaches:
 
-    1. 'Pitch' is a perceptual phenomenon that happens in the listener, not a fact about the universe
-    2. When we talk about the 'frequency' of a sound in Hertz, we're only talking about periodic sounds
-    3. 'Frequency' in Hz is just the number of times a sound repeats in 1 second
+1. 'Pitch' is a perceptual phenomenon that happens in the listener, not a fact about the universe
+2. When we talk about the 'frequency' of a sound in Hertz, we're only talking about periodic sounds
+3. 'Frequency' in Hz is just the number of times a sound repeats in 1 second
 
 Things that are implicitly demonstrated but needn't be called-out if it's too much for the room: our experience of frequency is logarithmic, destructive interference (see Quirks, below), 
 
@@ -79,10 +79,10 @@ WAV** to load a WAV file.
 - Destructive Interference, sorta: Try exactly doubling the looping frequency given by f = 1/ Loop Period and you'll get destructive interference because the grains are 180º out of phase. Single pulses of a sine wav that begin and end neatly at zero-crossings result in complete silence. Maybe a neat way to introduce this idea if you save the output and examine it in Praat/Phonlab/whatever, but this was not something I intended
     - `sample-pulses/SinePeriod-2.268ms.wav` contains 1,024 frames at 44.1 kHz but only the first 100 frames (2.268ms) contain non-zero audio -- implying a cycle near 440 Hz or A4 on a conventionally tuned piano. If the looper is set to 880 starts per second, the starts will be about 50 samples apart—roughly half that sine cycle. The overlapping parts therefore have opposite phase and _mostly_ cancel (SinePeriod-2.268ms.wav is not an ideal sine). To dig into the code:
 
-    - `schedule_grain_starts` sets the spacing of the loop,
-    - `mix_overlapping_grains` sums the overlapping copies, and
-    - `_audio_callback` assembles the output.
-    -  https://en.wikipedia.org/wiki/Granular_synthesis
+- `schedule_grain_starts` sets the spacing of the loop,
+- `mix_overlapping_grains` sums the overlapping copies, and
+- `_audio_callback` assembles the output.
+-  https://en.wikipedia.org/wiki/Granular_synthesis
 
 - perhaps add an output waveform viewer that appears after synthesis?  UI implications are weird, though, and I'm not sure how to handle it. Separate tab?
 

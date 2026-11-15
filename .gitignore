@@ -1,4 +1,4 @@
 .venv/
-.pyGrains-venv/
+.PulseLooper-venv/
 __pycache__/
 *.py[cod]

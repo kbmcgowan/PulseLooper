@@ -25,11 +25,18 @@ Things that are implicitly demonstrated but needn't be called-out if it's too mu
 
 This works on my mac. Your python3 binary might be called something else.
 
+### Install
+
 ```sh
 python3 -m venv .PulseLooper-venv
 source .PulseLooper-venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+deactivate
+```
+
+```sh
+source .PulseLooper-venv/bin/activate
 python PulseLooper.py &
 ```
 

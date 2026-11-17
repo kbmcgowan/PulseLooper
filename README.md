@@ -9,9 +9,33 @@ in python. Designed to support a lesson that teaches:
 2. When we talk about the 'frequency' of a sound in Hertz, we're only talking about periodic sounds
 3. 'Frequency' in Hz is just the number of times a sound repeats in 1 second
 
-Things that are implicitly demonstrated but needn't be called-out if it's too much for the room: our experience of frequency is logarithmic, destructive interference (see Quirks, below), 
+Things that are implicitly demonstrated but needn't be called-out
+if it's too much for the room: our experience of frequency is
+logarithmic, destructive and constructive interference (see Quirks,
+below), relationships of period to frequency, period to wavelength,
+amplitude, clipping, editing at zero-crossings, what harmonics are,
+etc.
 
-**Important note**: the granular synthesis method used here means that the perceived amplitude of generated tones will *not* behave as expected (with low frequency tones being substantially quieter than 1,000 Hz tones and then perceived loudness beginning to drop off again above about 5,000 Hz). This is because of the unpredicable way the grains will overlap. With sample-pulses/SinePeriod-2.279ms.wav, for example, pulses will be separate at 100 Hz, but will begin to overlap at 1,000 Hz (so amplitudes may happen to sum constructively or destructively) and will overlap substantially/often at 10,000 Hz. The resulting RMS of the synthesized tone is unpredictable and therefore not a good way to demonstrate the relationship between frequency and loudness. It's up to you if you want to call this out in class or leave it for another time, but if some clever student asks (either right away or when you get to psychoacoustics) why this tool doesn't do what the textbook says it should do you can point out that it DOES, actually, but that the frequency sensitivity diagrams one sees in psychoacoustics textbooks are all created with pure tones that don't have this interference issue. See also: accidental demonstration of phase cancellation which is discussed in the Quirks.
+**Important note**: the granular synthesis method used here means
+that the perceived amplitude of generated tones will *not* behave
+as expected (with low frequency tones being substantially quieter
+than 1,000 Hz tones and then perceived loudness beginning to drop
+off again above about 5,000 Hz). This is because of the unpredicable
+way the grains will overlap. With sample-pulses/SinePeriod-2.279ms.wav,
+for example, pulses will be separate at 100 Hz, but will begin to
+overlap at 1,000 Hz (so amplitudes may happen to sum constructively
+or destructively) and will overlap substantially/often at 10,000
+Hz. The resulting RMS of the synthesized tone is unpredictable and
+therefore not a good way to demonstrate the relationship between
+frequency and loudness. It's up to you if you want to call this out
+in class or leave it for another time, but if some clever student
+asks (either right away or when you get to psychoacoustics) why
+this tool doesn't do what the textbook says it should do you can
+point out that it DOES, actually, but that the frequency sensitivity
+diagrams one sees in psychoacoustics textbooks are all created with
+pure tones that don't have this interference issue. See also:
+accidental demonstration of phase cancellation which is discussed
+in the Quirks.
 
 **AI assistance**: Developed with help from Copilot, an AI assistant using Copilot SDK in VS Code
 
